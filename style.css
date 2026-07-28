@@ -34,7 +34,7 @@ url("background.jpg");
 background-size:cover;
 background-position:center;
 
-padding:45px 20px;
+padding:50px 20px;
 
 text-align:center;
 
@@ -45,20 +45,14 @@ position:relative;
 }
 
 .logo{
-
-width:130px;
-
-margin-bottom:20px;
-
-border-radius:50%;
-
-background:white;
-
-padding:12px;
-
-box-shadow:0 10px 30px rgba(0,0,0,.2);
-
+    width:100px;
+    margin-bottom:12px;
+    border-radius:50%;
+    background:white;
+    padding:8px;
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
 }
+
 
 .hero h1{
 
@@ -104,7 +98,7 @@ color:#004fa3;
 
 .donation{
 
-padding:70px 0;
+padding:45px 0;
 
 }
 
