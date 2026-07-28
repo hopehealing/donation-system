@@ -26,3 +26,17 @@ buttons.forEach(button => {
 document.getElementById("donateBtn").addEventListener("click", function () {
     window.location.href = "payment.html";
 });
+function goToPayment() {
+
+    let amount = document.querySelector(".amount-btn.active").innerText;
+
+    let custom = document.querySelector(".custom-amount input").value;
+
+    if (custom.trim() !== "") {
+        amount = custom + " جنيه";
+    }
+
+    localStorage.setItem("donationAmount", amount);
+
+    window.location.href = "payment.html";
+}
