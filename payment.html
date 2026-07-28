@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>إتمام التبرع | Hope & Healing Foundation</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Cairo',sans-serif;
+}
+
+body{
+background:#f5f7fb;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+padding:20px;
+}
+
+.card{
+background:#fff;
+width:100%;
+max-width:600px;
+border-radius:25px;
+padding:35px;
+box-shadow:0 15px 40px rgba(0,0,0,.1);
+}
+
+.logo{
+width:110px;
+display:block;
+margin:auto;
+margin-bottom:20px;
+}
+
+h1{
+text-align:center;
+color:#0d47a1;
+margin-bottom:10px;
+}
+
+p{
+text-align:center;
+color:#666;
+margin-bottom:25px;
+}
+
+.amount{
+background:#eef5ff;
+padding:18px;
+border-radius:15px;
+font-size:28px;
+font-weight:bold;
+text-align:center;
+color:#0066ff;
+margin-bottom:25px;
+}
+
+.pay-box{
+background:#fafafa;
+border:2px solid #eee;
+border-radius:18px;
+padding:18px;
+margin-bottom:18px;
+}
+
+.pay-box h2{
+font-size:22px;
+margin-bottom:10px;
+}
+
+.value{
+font-size:22px;
+font-weight:bold;
+word-break:break-all;
+margin-bottom:15px;
+}
+
+button{
+width:100%;
+padding:15px;
+background:#0066ff;
+border:none;
+color:white;
+font-size:18px;
+border-radius:12px;
+cursor:pointer;
+}
+
+button:hover{
+background:#004ec2;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<img src="logo.png" class="logo">
+
+<h1>إتمام التبرع</h1>
+
+<p>
+اختر وسيلة التبرع ثم انسخ البيانات لإتمام التحويل.
+</p>
+
+<div class="amount">
+1000 جنيه
+</div>
+
+<div class="pay-box">
+
+<h2>Vodafone Cash</h2>
+
+<div class="value" id="vodafone">
+01040214464
+</div>
+
+<button onclick="copyVodafone()">
+نسخ رقم فودافون كاش
+</button>
+
+</div>
+
+<div class="pay-box">
+
+<h2>InstaPay</h2>
+
+<div class="value" id="insta">
+awtmx@instapay
+</div>
+
+<button onclick="copyInsta()">
+نسخ حساب InstaPay
+</button>
+
+</div><script>
+
+function copyVodafone(){
+
+navigator.clipboard.writeText(
+document.getElementById("vodafone").innerText
+);
+
+alert("تم نسخ رقم Vodafone Cash");
+
+}
+
+function copyInsta(){
+
+navigator.clipboard.writeText(
+document.getElementById("insta").innerText
+);
+
+alert("تم نسخ حساب InstaPay");
+
+}
+
+</script>
+
+</body>
+
+</html>
