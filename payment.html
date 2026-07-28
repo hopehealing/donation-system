@@ -220,10 +220,9 @@ awtmx@instapay
 
 </div>
 
-<button onclick="copyInsta()">
-نسخ حساب InstaPay
+<button onclick="finishDonation()" class="finish-btn">
+✅ تم التحويل
 </button>
-
 </div><script>
 
 function copyVodafone(){
@@ -249,6 +248,9 @@ const amount = localStorage.getItem("donationAmount");
 
 if (amount) {
     document.getElementById("amount").innerText = amount;
+}
+    function finishDonation(){
+    window.location.href = "thankyou.html";
 }
 </script>
 
