@@ -1,0 +1,19 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:Cairo,sans-serif}
+body{background:#0d1520;color:#fff}
+.hero{height:100vh;background:url('background.jpg') center/cover no-repeat;position:relative;display:flex;align-items:center;justify-content:center}
+.overlay{position:absolute;inset:0;background:rgba(0,0,0,.58)}
+.content{position:relative;text-align:center;padding:20px}
+.logo{width:130px;margin-bottom:20px}
+h1{font-size:44px}h2{margin:10px 0}p{font-size:22px}
+#donateBtn{margin-top:30px;background:#0b84ff;color:#fff;border:none;padding:16px 38px;border-radius:50px;font-size:20px;cursor:pointer;transition:.3s}
+#donateBtn:hover{transform:translateY(-3px)}
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);align-items:center;justify-content:center}
+.box{background:#fff;color:#222;width:min(92%,650px);padding:30px;border-radius:20px}
+#close{float:left;cursor:pointer;font-size:28px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:20px 0}
+.amt{padding:14px;border:none;border-radius:12px;background:#eef3ff;cursor:pointer}
+input{width:100%;padding:14px;border-radius:10px;border:1px solid #ccc;margin:15px 0}
+.pay{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.card{background:#f6f8fc;padding:18px;border-radius:14px;text-align:center}
+.copy{margin-top:10px;background:#0b84ff;color:#fff;border:none;padding:10px 20px;border-radius:10px;cursor:pointer}
+@media(max-width:700px){h1{font-size:32px}.grid,.pay{grid-template-columns:1fr}}
