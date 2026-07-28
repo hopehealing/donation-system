@@ -34,7 +34,7 @@ url("background.jpg");
 background-size:cover;
 background-position:center;
 
-padding:90px 20px;
+padding:55px 20px;
 
 text-align:center;
 
@@ -109,16 +109,12 @@ padding:70px 0;
 }
 
 .amounts{
-
 display:grid;
-
 grid-template-columns:repeat(3,1fr);
-
-gap:18px;
-
-margin-bottom:25px;
-
+gap:12px;
+margin-bottom:20px;
 }
+
 
 .amount-btn{
 
@@ -126,21 +122,22 @@ background:white;
 
 border:none;
 
-padding:18px;
+padding:12px;
 
-font-size:20px;
+font-size:17px;
 
 font-weight:700;
 
-border-radius:15px;
+border-radius:12px;
 
 cursor:pointer;
 
 transition:.3s;
 
-box-shadow:0 5px 18px rgba(0,0,0,.08);
+box-shadow:0 5px 12px rgba(0,0,0,.08);
 
 }
+
 
 .amount-btn:hover{
 
