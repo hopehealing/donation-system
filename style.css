@@ -295,5 +295,28 @@ font-size:24px;
 .number{
 font-size:18px;
 }
+}
 
+.donate-now{
+    text-align:center;
+    margin:35px 0;
+}
+
+#donateBtn{
+    background:#0066ff;
+    color:#fff;
+    border:none;
+    padding:18px 45px;
+    font-size:22px;
+    font-weight:bold;
+    border-radius:15px;
+    cursor:pointer;
+    transition:0.3s;
+    box-shadow:0 8px 20px rgba(0,102,255,.3);
+}
+
+#donateBtn:hover{
+    background:#004ec2;
+    transform:translateY(-2px);
+}
 }
