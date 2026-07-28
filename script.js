@@ -23,3 +23,6 @@ buttons.forEach(button => {
     });
 
 });
+document.getElementById("donateBtn").addEventListener("click", function () {
+    window.location.href = "payment.html";
+});
