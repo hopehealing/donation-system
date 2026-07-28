@@ -272,9 +272,15 @@ font-size:22px;
 }
 
 .amounts{
-grid-template-columns:repeat(3,1fr);
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
 }
 
+.amount-btn{
+    padding:12px;
+    font-size:17px;
+    border-radius:12px;
+}
 .payment-cards{
 grid-template-columns:1fr;
 }
