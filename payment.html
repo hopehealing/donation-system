@@ -171,7 +171,11 @@ document.getElementById("insta").innerText
 alert("تم نسخ حساب InstaPay");
 
 }
+const amount = localStorage.getItem("donationAmount");
 
+if (amount) {
+    document.getElementById("amount").innerText = amount;
+}
 </script>
 
 </body>
