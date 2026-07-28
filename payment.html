@@ -103,7 +103,67 @@ cursor:pointer;
 button:hover{
 background:#004ec2;
 }
+.payment-methods{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:15px;
+margin-bottom:20px;
+}
 
+.pay-box{
+background:#fafafa;
+border:2px solid #eee;
+border-radius:18px;
+padding:20px;
+text-align:center;
+margin-bottom:0;
+}
+
+.pay-logo{
+width:80px;
+height:auto;
+display:block;
+margin:0 auto 15px;
+}
+
+.pay-box h2{
+margin-bottom:10px;
+font-size:20px;
+}
+
+.value{
+font-size:18px;
+font-weight:bold;
+margin-bottom:15px;
+word-break:break-word;
+}
+
+.vodafone{
+border-color:#e60023;
+}
+
+.insta{
+border-color:#6f42c1;
+}
+
+@media(max-width:700px){
+.payment-methods{
+grid-template-columns:1fr 1fr;
+gap:10px;
+}
+
+.pay-logo{
+width:65px;
+}
+
+.pay-box{
+padding:15px;
+}
+
+.value{
+font-size:15px;
+}
+    
 </style>
 
 </head>
@@ -124,7 +184,11 @@ background:#004ec2;
 1000 جنيه
 </div>
 
-<div class="pay-box">
+<div class="payment-methods">
+
+<div class="pay-box vodafone">
+
+<img src="vodafone.png" class="pay-logo" alt="Vodafone Cash">
 
 <h2>Vodafone Cash</h2>
 
@@ -133,17 +197,27 @@ background:#004ec2;
 </div>
 
 <button onclick="copyVodafone()">
-نسخ رقم فودافون كاش
+نسخ الرقم
 </button>
 
 </div>
 
-<div class="pay-box">
+<div class="pay-box insta">
+
+<img src="instapay.png" class="pay-logo" alt="InstaPay">
 
 <h2>InstaPay</h2>
 
 <div class="value" id="insta">
 awtmx@instapay
+</div>
+
+<button onclick="copyInsta()">
+نسخ الحساب
+</button>
+
+</div>
+
 </div>
 
 <button onclick="copyInsta()">
